@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- Start Gallery -->
+<div class="gallery-box">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-title text-center">
+                    <h2>Gallery</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+            </div>
+        </div>
+        <div class="tz-gallery">
+            <div class="row">
+                {% for gal in galery %}
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <a class="lightbox" href="images/gallery-img-01.jpg">
+                        <img class="img-fluid" src="{{gal.photo.url}}" style="height: 350px;" alt="Gallery Images">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Gallery -->
+
+
+{% endblock content %}

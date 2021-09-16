@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<style>
+    h3 {
+        margin-left: 10%;
+    }
+    
+    img {
+        align-content: center;
+    }
+</style>
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <img src='{{food.photo.url}}'>
+    <br>
+    <br>
+    <h3>Name: {{food.name}} </h3>
+    <h3>Price: {{food.price}} $ </h3>
+
+
+
+    {% endblock content %}
